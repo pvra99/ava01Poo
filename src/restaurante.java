@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class restaurante {
     public static void main(String[] args) throws Exception {
 
-        System.out.println("Bem vindo(a) ao Mequi feliz\n"  + "digite o seu nome:");
+        System.out.println("Bem vindo(a) ao Mequi feliz!\n"  + "Digite o seu nome:");
         Scanner scanner = new Scanner(System.in);
         String nomeIn = scanner.nextLine();
 
@@ -10,6 +10,7 @@ public class restaurante {
         System.out.println(
         "\nBem-vindo(a) ao Mequi feliz! " + nomeIn  +
         "\nÉ um prazer receber você em nosso espaço, onde cada refeição é preparada com Alegria, carinho e ingredientes de qualidade\n" +
+        "Nesse sistema voce vai escolher a diversão que é o brinqueo, logo em seguida vai escolher o prato princiapl, acompanhamento e bebida!\n"+
         "A diversão do Mequi esse mes é a turmar do sonic, onde voce pode escolher um entre esses brinquedos:\n" +
         "(1) R$10: Sonic\n" +
         "(2) R$10: Shadow\n" +
@@ -44,11 +45,12 @@ public class restaurante {
         System.out.println("Certo!\n"+"voce escolheu o Knuckles\n"+  "agora vamos escolher oq deseja comer!\n");}
         
         else{System.out.println("opção invalida, favor digitar codigo igual exposto no menu");
+        scanner.close();            
         return;}
                             
         
         System.out.println(
-        "as opçoes de prato principal são as seguintes\n"+
+        "\nas opçoes de prato principal são as seguintes\n"+
         "(6) R$10.00: MequiFiesta\n"+
         "(7) R$10.50: MequiChedar\n"+
         "(8) R$10.75: MequiChicken\n"+
@@ -86,11 +88,12 @@ public class restaurante {
         System.out.println("Certo!\n"+"voce escolheu o Mequifish\n"+  "agora vamos escolher o acompanhamento!!");}
         
         else{System.out.println("opção invalida, favor digitar codigo igual exposto no menu");
+        scanner.close();            
         return;}
             
         
         System.out.println(
-        "as opçoes de Acompanhamento são as seguintes\n"+
+        "\nas opçoes de Acompanhamento são as seguintes\n"+
         "(11) R$2.50: Mequi Fritas pequena\n"+
         "(12) R$3.00: Mequi firtas media\n"+
         "(13) R$4.00: Mequi Fritas grande\n"+
@@ -128,11 +131,12 @@ public class restaurante {
         System.out.println("Certo!\n"+"voce escolheu: Mequi nuggets 10 unidades");}
 
         else{System.out.println("opção invalida, favor digitar codigo igual exposto no menu");
+        scanner.close();            
         return;}
 
 
         System.out.println(
-        "Agora vamos escolher a bebida\n no Mequi feliz temos a bebida padrão refil de 700ml, onde voce escolher o sabor e pode encher quantas vezes quiser\n"+
+        "\nAgora vamos escolher a bebida\nNo Mequi feliz temos a bebida padrão refil de 700ml, onde voce escolher o sabor e pode encher quantas vezes quiser\n"+
         "As opçoes de bebidas são:\n"+
         "(16) R$12.00: coca zero\n"+
         "(17) R$10.00: pepsi\n"+
@@ -159,6 +163,7 @@ public class restaurante {
         System.out.println("Certo!\n"+ "voce escolheu Fanta pra beber");}
 
         else{System.out.println("opção invalida, favor digitar codigo igual exposto no menu");
+        scanner.close();            
         return;}
 
 
@@ -166,13 +171,12 @@ public class restaurante {
 
 
         System.out.println("\nResumo do pedido:");
-        System.out.println("Diversão: " + diversãoEscolhida+"(R$ "+preçoDiversão+")");
+        System.out.println("\nDiversão: " + diversãoEscolhida+"(R$ "+preçoDiversão+")");
         System.out.println("Prato Principal: " + pratoEscolhido + " (R$ " + preçoPrato + ")");
         System.out.println("Acompanhamento: " + AcompanhamentoEscolhido + " (R$ " + preçoAcompanhamento + ")");
         System.out.println("Bebida: " + bebidaEscolhida + " (R$ " + preçoBebida + ")");
-        System.out.println("Total a pagar: R$ " + total);
+        System.out.println("\nTotal a pagar: R$ " + total);
 
         scanner.close();            
-    //favor não mecher nos cochetes abaixo  >.<                        
     }
 }
